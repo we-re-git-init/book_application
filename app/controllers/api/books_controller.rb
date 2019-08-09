@@ -14,7 +14,7 @@ class Api::BooksController < ApplicationController
     if @book.save
       render 'show.json.jb'
     else
-      render json: {errors: @book.errors.full_messages}, status: :unprocessible_entity
+      render json: {errors: @book.errors.full_messages}, status: :unprocessable_entity
     end
   end
 
