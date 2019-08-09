@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    resources :books, only: [:update]
+    resources :books, only: [:update, :show]
   end
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
